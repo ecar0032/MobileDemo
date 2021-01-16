@@ -1,15 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from "@react-navigation/native"
 import {createStackNavigator} from "@react-navigation/stack"
 import MyComponent1 from './Buttons/EtienneButton'
 import MyComponent2 from './Buttons/MichaelButton'
-import MyComponent3 from './Buttons/GabrielButton'
+import MyComponent3 from './Buttons/GabrielButtonPart1'
 import MyComponent4 from './Buttons/MatteoButton'
+import MyComponent5 from './Buttons/GabrielButtonPart2'
+import MyComponent6 from './Buttons/GabrielButtonPart3'
 import EtienneScreen from './Screens/EtienneScreen'
 import MichaelScreen from './Screens/MichaelScreen'
 import GabrielScreen from './Screens/GabrielScreen'
+import AccScreen from './Screens/AccScreen'
+import LayoutScreen from './Screens/LayoutScreen'
 import MatteoScreen from './Screens/MatteoScreen'
 
 const Stack = createStackNavigator();
@@ -36,6 +41,14 @@ function HomeScreen() {
         <View style ={styles.buttons}>
          <MyComponent3 />
         </View>
+        
+        <View style ={styles.buttons}>
+         <MyComponent5 />
+        </View>
+
+        <View style ={styles.buttons}>
+         <MyComponent6 />
+        </View>
 
         <View style ={styles.buttons}>
          <MyComponent4 />
@@ -57,6 +70,8 @@ export default function App() {
         <Stack.Screen name="Etienne Demo" component={EtienneScreen}/>
         <Stack.Screen name="Michael Demo" component={MichaelScreen}/>
         <Stack.Screen name="Gabriel Demo" component={GabrielScreen}/>
+        <Stack.Screen name="AccScreen" component={AccScreen}/>
+        <Stack.Screen name="LayoutScreen" component={LayoutScreen}/>
         <Stack.Screen name="Matteo Demo" component={MatteoScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
