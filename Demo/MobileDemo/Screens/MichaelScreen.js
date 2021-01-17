@@ -1,3 +1,7 @@
+/**Please note that due to some package issues and limitations, 
+ * in order to run the sound functionality from expo, 
+ * lines 72 - 74 in App.js and the Layout Screens for AccScreen, GarbielScreen and LayoutScreen need to be commented**/
+
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 
